@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_ConsumindoWebAPI.Android", "XF_ConsumindoWebAPI\XF_ConsumindoWebAPI.Android\XF_ConsumindoWebAPI.Android.csproj", "{800529C2-E07D-46B2-8301-B2E1697FE4E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_ConsumindoWebAPI", "XF_ConsumindoWebAPI\XF_ConsumindoWebAPI\XF_ConsumindoWebAPI.csproj", "{035C696F-DEF6-49B0-9429-F48CD3617832}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800529C2-E07D-46B2-8301-B2E1697FE4E0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{035C696F-DEF6-49B0-9429-F48CD3617832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035C696F-DEF6-49B0-9429-F48CD3617832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035C696F-DEF6-49B0-9429-F48CD3617832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035C696F-DEF6-49B0-9429-F48CD3617832}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C097A623-01FD-40EE-A164-37A0FCF31E3B}
+	EndGlobalSection
+EndGlobal
