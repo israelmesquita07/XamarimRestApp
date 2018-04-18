@@ -4,8 +4,40 @@
              xmlns:local="clr-namespace:XF_ConsumindoWebAPI"
              x:Class="XF_ConsumindoWebAPI.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Orientation="Vertical">
+        <StackLayout Padding="5,5,0,0">
+            <Label Text="Adicionar um Produto" TextColor="Green" />
+        </StackLayout>
+        <StackLayout Padding="10,0,10,0">
+            <Entry x:Name="txtNome" Placeholder="Nome do produto" HorizontalOptions="Start"
+                    VerticalOptions="StartAndExpand" HeightRequest="40" WidthRequest="300" FontSize="Small"/>
+            <Entry x:Name="txtCategoria" Placeholder="Categoria do produto" HorizontalOptions="Start"
+                    VerticalOptions="StartAndExpand" HeightRequest="40" WidthRequest="300" FontSize="Small" />
+            <Entry x:Name="txtPreco" Placeholder="Preço do produto" HorizontalOptions="Start" VerticalOptions="StartAndExpand"
+                    HeightRequest="40" WidthRequest="300" FontSize="Small" />
+            <Button HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" HeightRequest="40" Text="Adicionar/Atualizar Produto"
+                    Clicked="btnAdicionar_Clicked" FontSize="Small"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Padding="10,5,10,0">
+            <ListView x:Name="listaProdutos" ItemSelected="listaProdutos_ItemSelected" BackgroundColor="Aqua" SeparatorColor="Blue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+                                <MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="10,0,10,0" Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding Categoria}" TextColor="Blue" HorizontalOptions="Center"/>
+                                <Label Text="{Binding Preco}" HorizontalOptions="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+
 
 </ContentPage>
